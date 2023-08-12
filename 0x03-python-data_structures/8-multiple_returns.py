@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-def multiple_returns(sentence):
-    if len(sentence) == 0:
-        my_tuple = (0, None)
-    else:
-        my_tuple = (len(sentence), sentence[:1])
-    return(my_tuple)
+multiple_returns = __import__('8-multiple_returns').multiple_returns
+
+sentence = "At school, I learnt C!"
+length, first = multiple_returns(sentence)
+print("Length: {:d} - First character: {}".format(length, first))
